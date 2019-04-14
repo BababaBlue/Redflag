@@ -1,14 +1,14 @@
 import self as self
-from PySide2 import QtWidgets
+from PySide2 import QtCore, QtGui, QtWidgets
+import sys
 
 from UI import redflag
 
-import redflag
+k = redflag.Ui_MainWindow
+k1 = k.setupUi
 
-k = redflag.Ui_MainWindow.setupUi(self,Mainwindow)
 
-
-class MyApp(k, QtWidgets.QMainWindow):
+class MyApp(k1, QtWidgets.QMainWindow):
 
     def __int__(self):
         super(MyApp, self).__int__()
